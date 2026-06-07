@@ -3,7 +3,7 @@ function [physicalDOE, codedDOE, response] = generateMyDOE(nbDepthLevels,lowDept
     % Author: Kento Takahashi
     % Date of last modification: 22/04/2026
 
-    rootDir = fullfile('..','data');
+    rootDir = fullfile(mfilename("fullpath"),'..','..','data');
 
     depthLevels = lowDepth:(highDepth-lowDepth)/(nbDepthLevels-1):highDepth;
     
